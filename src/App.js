@@ -1,5 +1,5 @@
 import './App.css';
-import { FrontDriveOptions } from './components/DATA/Data'
+import { FrontDriveOptions, DriveBrandOptions } from './components/DATA/Data'
 import SelectInput from './components/UI/SelectInput';
 
 
@@ -7,6 +7,7 @@ import SelectInput from './components/UI/SelectInput';
 function App() {
 
   const frontDriveOptions = FrontDriveOptions
+  const driveBrandOptions = DriveBrandOptions
 
   console.log(frontDriveOptions)
 
@@ -14,7 +15,12 @@ function App() {
     <div className="App">
       <h1>Bike Builder</h1>
       <form>      
-        <SelectInput selectLabel="Please select 1x or 2x" selectOptions={frontDriveOptions} />
+       
+      
+          <SelectInput label="Front Drive Options" selectInitialValue="Please select 1x or 2x" selectOptions={frontDriveOptions} />
+
+          <SelectInput label="Drivetrain Brand" selectInitialValue="Please drivetrain brand" selectOptions={driveBrandOptions} />
+      
 
         
       </form>

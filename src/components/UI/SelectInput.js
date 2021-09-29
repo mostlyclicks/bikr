@@ -5,12 +5,15 @@ const SelectInput = (props) => {
   console.log(props)
 
   return (
-    <select>
-      <option value={props.selectLabel}>{props.selectLabel}</option>
-      {props.selectOptions.map((selectOption) => {
-        return <option value={selectOption}>{selectOption}</option>
-      })}
-    </select>
+    <div>
+      <label>{props.label}</label>
+      <select>
+        <option value={props.selectInitialValue}>{props.selectInitialValue}</option>
+        {props.selectOptions.map((selectOption) => {
+          return <option value={selectOption}>{selectOption}</option>
+        })}
+      </select>
+    </div>
   )
 }
 

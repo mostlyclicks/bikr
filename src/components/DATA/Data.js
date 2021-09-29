@@ -3,8 +3,13 @@ const FrontDriveOptions = [
   "2x"
 ]
 
+const DriveBrandOptions = [
+  "Shimano",
+  "SRAM"
+]
 
 
 
 
-export { FrontDriveOptions }
+
+export { FrontDriveOptions, DriveBrandOptions }
