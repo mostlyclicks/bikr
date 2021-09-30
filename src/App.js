@@ -9,12 +9,14 @@ function App() {
   const frontDriveOptions = FrontDriveOptions
   const driveBrandOptions = DriveBrandOptions
   const mechElectronicOptions = MechElectronicOptions
+  const mechOptions = MechOptions
+  const electronicOptions = ElectronicOptions
 
   console.log(frontDriveOptions)
 
   return (
     <div className="App">
-      <h1>Bike Builder</h1>
+      <h1>Bildr</h1>
       <form>      
        
       
@@ -24,9 +26,9 @@ function App() {
 
           <SelectInput label="Mechanical or Electric Shifting" selectInitialValue="Please select" selectOptions={mechElectronicOptions} />
 
-          <SelectInput label="Mechanical Drivetrain Options" selectInitialValue="Please drivetrain brand" selectOptions={driveBrandOptions} />
+          <SelectInput label="Mechanical Drivetrain Options" selectInitialValue="Please select mechanical options" selectOptions={mechOptions} />
           
-          <SelectInput label="Drivetrain Brand" selectInitialValue="Please drivetrain brand" selectOptions={driveBrandOptions} />
+          <SelectInput label="Electronic Options" selectInitialValue="Please select electronic options" selectOptions={electronicOptions} />
       
 
         
