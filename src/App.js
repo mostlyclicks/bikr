@@ -49,7 +49,7 @@ function App() {
         </select>
 
        
-        <SelectInput onChange={frontDriveChangeHandler} selected={frontDrive} label="Front Drive Options" selectInitialValue="Please select 1x or 2x" selectOptions={frontDriveOptions} />
+        <SelectInput onSelectChange={frontDriveChangeHandler} label="Front Drive Options" selectInitialValue="Please select 1x or 2x" selectOptions={frontDriveOptions} />
 
         <SelectInput label="Drivetrain Brand" selectInitialValue="Please select drivetrain brand" selectOptions={driveBrandOptions} />
 
