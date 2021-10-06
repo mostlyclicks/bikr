@@ -7,7 +7,7 @@ const SelectInput = (props) => {
   return (
     <div>
       <label>{props.label}</label>
-      <select onChange={props.onSelectChange} value={value}>
+      <select onChange={props.onSelectChange} value={props.value}>
         <option value={props.selectInitialValue}>{props.selectInitialValue}</option>
         {props.selectOptions.map((selectOption) => {
           return <option value={selectOption}>{selectOption}</option>
